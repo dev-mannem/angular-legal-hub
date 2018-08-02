@@ -1,0 +1,16 @@
+.main-header {
+  display:block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.main-body {
+  display:block;
+}
+.main-footer {
+  display:block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.page-header {
+  font-size: 2em;
+}

@@ -1,0 +1,26 @@
+.company-form {
+  display:block;
+  margin-left: 20px;
+  padding-left: 25%;
+  padding-right: 25%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.invalid{
+  border: 1px solid red;
+}
+.alert.alert-danger {
+  padding : 10px;
+  margin : 5px;
+  margin-left : 20px;
+}
+.col-sm-9 {
+  padding-bottom: 15px;
+}
+.form-submit-button {
+  width: 100%;
+  padding: 10px;
+}
+.panel-primary {
+  margin: 40px;
+}

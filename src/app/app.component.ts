@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+
+  authFlag = false;
+
+  constructor() {
+    if (window.location.href.indexOf('login') > -1) {
+      this.authFlag = true;
+    }
+  }
+
 }

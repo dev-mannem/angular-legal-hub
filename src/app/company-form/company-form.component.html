@@ -1,0 +1,99 @@
+<div class="d-flex justify-content-center panel panel-primary">
+    <div class="panel-heading" > Register/ Update Company </div>
+    <div class="company-form">
+    <form [formGroup]="companyGroup">
+        <div class="form-group row">
+          <label for="companyName" class="col-sm-3 col-form-label">Company</label>
+          <div class="col-sm-9">
+            <input type="text" required class="form-control" formControlName="companyName" id="companyName">
+          </div>
+          <div>
+            <span class="col-sm-3"></span>
+            <span class="col-sm-9" *ngIf="companyGroup.controls['companyName'].errors?.required && companyGroup.controls['companyName'].touched" class="alert alert-danger">
+              Field required.
+            </span>
+          </div>
+
+        </div>
+        <div class="form-group row">
+          <label for="fullName" class="col-sm-3 col-form-label">Full Name</label>
+          <div class="col-sm-9">
+              <input type="text" class="form-control" formControlName="fullName" id="fullName">
+          </div>
+        </div>
+        <div class="form-group row">
+            <label for="email" class="col-sm-3 col-form-label">Email</label>
+            <div class="col-sm-9">
+                <input type="text" class="form-control" formControlName="email" id="email">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="companyEmail" class="col-sm-3 col-form-label">Company Email</label>
+            <div class="col-sm-9">
+                <input type="text" class="form-control" formControlName="companyEmail" id="companyEmail">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="address" class="col-sm-3 col-form-label">Address</label>
+            <div class="col-sm-9">
+                <input type="text" class="form-control" formControlName="address" id="address">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="city" class="col-sm-3 col-form-label">City</label>
+            <div class="col-sm-9">
+                <input type="text" class="form-control" formControlName="city" id="city">
+            </div>
+          </div>
+          <div class="form-group row">
+              <label for="stateAbbrev" class="col-sm-3 col-form-label">State Abbreviation</label>
+              <div class="col-sm-9">
+                  <input type="text" class="form-control" formControlName="stateAbbrev" id="stateAbbrev">
+              </div>
+            </div>
+          <div class="form-group row">
+            <label for="state" class="col-sm-3 col-form-label">State</label>
+            <div class="col-sm-9">
+                <input type="text" class="form-control" formControlName="state" id="state">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="country" class="col-sm-3 col-form-label">Country</label>
+            <div class="col-sm-9">
+                <input type="text" class="form-control" formControlName="country" id="country">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="postalCode" class="col-sm-3 col-form-label">Postal Code</label>
+            <div class="col-sm-9">
+                <input type="number" class="form-control" formControlName="postalCode" id="postalCode">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="university" class="col-sm-3 col-form-label">University</label>
+            <div class="col-sm-9">
+                <input type="text" class="form-control" formControlName="university" id="university">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="url" class="col-sm-3 col-form-label">Url</label>
+            <div class="col-sm-9">
+                <input type="text" class="form-control" formControlName="url" id="url">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="phone" class="col-sm-3 col-form-label">Phone</label>
+            <div class="col-sm-9">
+                <input type="text" class="form-control" formControlName="phone" id="phone">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="jobTitle" class="col-sm-3 col-form-label">Job Title</label>
+            <div class="col-sm-9">
+                <input type="text" class="form-control" formControlName="jobTitle" id="jobTitle">
+            </div>
+          </div>
+      </form>
+      <button class="btn btn-primary form-submit-button" (click)="SubmitCompanyDetails()">Submit</button>
+    </div>
+</div>

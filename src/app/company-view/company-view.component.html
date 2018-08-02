@@ -1,0 +1,53 @@
+<table class="table table-fixed">
+    <thead class="thead-light">
+      <tr>
+        <th scope="col"></th>
+        <th scope="col">#</th>
+        <th scope="col">Company</th>
+        <th scope="col">Full Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Company Email</th>
+        <th scope="col">Address</th>
+        <th scope="col">City</th>
+        <th scope="col">State Abbreviation</th>
+        <th scope="col">State</th>
+        <th scope="col">Country</th>
+        <th scope="col">Postal Code</th>
+        <th scope="col">University</th>
+        <th scope="col">URL</th>
+        <th scope="col">Phone</th>
+        <th scope="col">Job Title</th>
+      </tr>
+    </thead>
+    <tbody style="height: 6px; overflow-y : scroll;">
+      <tr *ngFor="let company of companyList">
+        <th>
+          <a (click)="editCompany(company)">
+            <span class="glyphicon glyphicon-edit" ></span>
+          </a>
+          <span>&nbsp;</span>
+          <a (click)="deleteCompany(company.companyId)">
+            <span class="glyphicon glyphicon-remove" style="color:red" ></span>
+          </a>
+        </th>
+        <th scope="row">{{company.companyId}}</th>
+        <td>{{company.company}}</td>
+        <td>{{company.fullName}}</td>
+        <td>{{company.email}}</td>
+        <td>{{company.companyEmail}}</td>
+        <td>{{company.address}}</td>
+        <td>{{company.city}}</td>
+        <td>{{company.stateAbbrev}}</td>
+        <td>{{company.state}}</td>
+        <td>{{company.country}}</td>
+        <td>{{company.postalCode}}</td>
+        <td>{{company.university}}</td>
+        <td>{{company.url}}</td>
+        <td>{{company.phone}}</td>
+        <td>{{company.jobTitle}}</td>
+      </tr>
+    </tbody>
+  </table>
+  <div>
+    <button class="btn btn-primary" (click)="addCompany()" >Add Company</button>
+  </div>

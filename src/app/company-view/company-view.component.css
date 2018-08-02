@@ -1,0 +1,14 @@
+a {
+  cursor: pointer;
+}
+/* tbody {
+  height: 200px;
+  overflow-y: auto;
+  width: 100%;
+  } */
+
+  .table-fixed tbody {
+    height: 230px;
+    overflow-y: auto;
+    width: 100%;
+  }
